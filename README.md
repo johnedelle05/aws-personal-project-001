@@ -26,7 +26,7 @@ This project outlines an end-to-end data pipeline using AWS services to process 
 
 ## Architectural Diagram
 
-![Architecture Diagram](img/Architectural Diagram.png)
+![Architecture Diagram](img/diagram.png)
 
 ---
 
