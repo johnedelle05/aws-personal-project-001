@@ -24,6 +24,12 @@ This project outlines an end-to-end data pipeline using AWS services to process 
 
 ---
 
+## Architectural Diagram
+
+![Architecture Diagram](img/Architectural Diagram.png)
+
+---
+
 ## 🛠️ Stack
 
 - **AWS S3** – Storage zones (Landing, Staging, Final)
