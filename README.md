@@ -1,4 +1,4 @@
-# 🗃️ AWS Data Pipeline
+# 🗃️ AWS Data Pipeline for Tourism Demand Statistics on Visitor Arrivals to the Philippines (2023)
 
 This project outlines an end-to-end data pipeline using AWS services to process PDF files, convert them to Parquet, and make them queryable using Amazon Athena. Power BI is planned for future integration to visualize the processed data.
 
