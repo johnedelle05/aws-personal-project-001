@@ -12,7 +12,7 @@ This project outlines an end-to-end data pipeline using AWS services to process 
 3. 🔔 An **S3 event** triggers a **Lambda function** that:
    - Parses and extracts tabular data from the PDF
    - Cleans and transforms the data into **CSV** format
-   - [Lambda Function Code](lambda_function/lambda-visitors-arrival-extract.py)![image](img/lambda.png)
+   - [Lambda Function Code](lambda_function/lambda-visitors-arrival-extract.py) ![image](img/lambda.png)
    
 4. 📄 The resulting CSV is saved to the **S3 Staging Zone**.![image](img/staging.png) 📊 [CSV Output](dataset/Visitor%20Arrivals%20to%20the%20Philippines%20(January%20to%20October%202023).csv)
 5. 🔄 Another S3 event triggers a **second Lambda function** that initiates an **AWS Glue Job**.![image](img/lambda_glue_trigger.png)
@@ -20,9 +20,9 @@ This project outlines an end-to-end data pipeline using AWS services to process 
    - Cleans and transforms the CSV data
    - Converts it into **Parquet** format
    - Saves it to the **S3 Final Zone**, partitioned by **Year/Month/Type**
-   - [Glue Job Code](glue_job/glue_visitors-arrival-transform.py)![image](img/glue.png)
-7. 🕷️ Run Crawler on demand to update Data Catalog![image](img/crawler.png)![image](img/catalog.png)
-8. 🔍 The data is queried using **Amazon Athena** for analysis.![image](img/query.png)![image](img/results.png)
+   - [Glue Job Code](glue_job/glue_visitors-arrival-transform.py) ![image](img/glue.png)
+7. 🕷️ Run Crawler on demand to update Data Catalog![image](img/crawler.png) ![image](img/catalog.png)
+8. 🔍 The data is queried using **Amazon Athena** for analysis. ![image](img/query.png) ![image](img/results.png)
 9. 📊 In future development, **Power BI** will connect to Athena for enterprise-level reporting.
 
 ---
