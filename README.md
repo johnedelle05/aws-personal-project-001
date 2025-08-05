@@ -14,7 +14,7 @@ This project outlines an end-to-end data pipeline using AWS services to process 
    - Cleans and transforms the data into **CSV** format
    - [Lambda Function Code](lambda_function/lambda-visitors-arrival-extract.py)![image](img/lambda.png)
    
-4. 📄 The resulting CSV is saved to the **S3 Staging Zone**.![image](img/s3_landing_upload.png)
+4. 📄 The resulting CSV is saved to the **S3 Staging Zone**.![image](img/staging.png)
 5. 🔄 Another S3 event triggers a **second Lambda function** that initiates an **AWS Glue Job**.![image](img/lambda_glue_trigger.png)
 6. 🧹 The **Glue Job**:
    - Cleans and transforms the CSV data
